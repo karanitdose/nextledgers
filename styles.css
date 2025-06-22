@@ -874,6 +874,175 @@ h1, h2, h3, h4, h5, h6 {
     opacity: 0.9;
 }
 
+/* Pricing Section  */
+
+.price-container {
+  max-width: 950px;
+  margin: 4rem auto;
+  padding: 2rem;
+  background: #fff;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+/* Headings */
+.price-subtitle {
+  color: #f35b04;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  letter-spacing: 1px;
+}
+
+.price-title {
+  font-size: 1.5rem;
+  color: #ea580c;
+  margin-bottom: 2rem;
+}
+
+/* Slider Container */
+.price-slider-container {
+  position: relative;
+  margin: 2rem 0 5rem;
+  padding: 0 1rem;
+}
+
+.price-label-left,
+.price-label-right {
+  position: absolute;
+  top: -30px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #f35b04;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+}
+
+.price-label-left {
+  left: 0;
+}
+
+.price-label-right {
+  right: 0;
+}
+
+/* Slider */
+.price-slider {
+  width: 100%;
+  height: 18px;
+  border-radius: 50px;
+  appearance: none;
+  background: #f35b04;
+  outline: none;
+}
+
+.price-slider::-webkit-slider-thumb {
+  appearance: none;
+  height: 28px;
+  width: 28px;
+  border-radius: 50%;
+  background: #000;
+  cursor: pointer;
+  position: relative;
+  z-index: 3;
+}
+
+.price-slider::-moz-range-thumb {
+  height: 28px;
+  width: 28px;
+  border-radius: 50%;
+  background: #000;
+  cursor: pointer;
+}
+
+/* Value Bubble */
+.price-value-bubble {
+  position: absolute;
+  top: -60px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #fff;
+  color: #f35b04;
+  font-weight: bold;
+  padding: 6px 16px;
+  border-radius: 40px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  z-index: 10;
+}
+
+.price-bubble-tail {
+  width: 0;
+  height: 0;
+  border-left: 12px solid transparent;
+  border-right: 12px solid transparent;
+  border-top: 14px solid white;
+  position: absolute;
+  bottom: -13px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Card */
+.price-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 2rem;
+  display: flex;
+  gap: 1.5rem;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.price-img {
+  max-width: 200px;
+  flex-shrink: 0;
+}
+
+.price-content {
+  flex: 1;
+  text-align: left;
+}
+
+.price-content h2 {
+  margin: 0 0 0.5rem;
+}
+
+.price-content p {
+  margin: 0 0 1rem;
+  color: #444;
+  line-height: 1.5;
+}
+
+.price-btn {
+  background-color: #ea580c;
+  width: 200px;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.price-btn:hover {
+  background-color: #ea580c;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .price-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .price-content {
+    text-align: center;
+  }
+}
+
 
 /* TEAM SECTION  */
 

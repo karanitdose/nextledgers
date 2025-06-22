@@ -85,3 +85,27 @@ document.addEventListener("DOMContentLoaded", function () {
     }
     prevScrollPos = currentScrollPos;
   });
+
+
+  const slider = document.getElementById("price-slider");
+const bubble = document.getElementById("price-bubble");
+
+function formatMoney(value) {
+  const million = 1000000;
+  return `₹${value >= million ? value / million + 'M' : value}`;
+}
+
+function updateBubble() {
+  const val = slider.value;
+  bubble.innerText = formatMoney(val);
+
+  // Position bubble above thumb
+  const percent = (val - slider.min) / (slider.max - slider.min);
+  const bubbleWidth = bubble.offsetWidth;
+  const sliderWidth = slider.offsetWidth;
+  const offset = percent * sliderWidth - bubbleWidth / 2;
+  bubble.style.left = `${offset}px`;
+}
+
+slider.addEventListener("input", updateBubble);
+window.addEventListener("load", updateBubble);
