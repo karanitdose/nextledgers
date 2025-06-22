@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Priceing Page</title>
+    <link rel="stylesheet" href="styles.css">
+
+
+
+        <!--=============== REMIXICONS ===============-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/styles.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    
+</head>
+<body>
+    
+        <!-- Navigation -->
+ <header class="header">
+      <nav class="nav container">
+        <div class="nav__data">
+          <a href="index.html" class="nav__logo">
+            <i class="ri-planet-line"></i>
+            <img
+              style="height: 140px; width: 180px"
+              src="./image/websitelogo.png"
+              alt=""
+            />
+          </a>
+
+          <div class="nav__toggle" id="nav-toggle">
+            <i class="ri-menu-line nav__burger"></i>
+            <i class="ri-close-line nav__close"></i>
+          </div>
+        </div>
+
+        <!--=============== NAV MENU ===============-->
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            
+          <li><a class="nav__link"  href="index.html" >Home</a></li>
+            <li><a class="nav__link"a  href="about.html">About</a></li>
+
+
+            <!--=============== DROPDOWN 1 ===============-->
+            <li class="dropdown__item">
+              <div class="nav__link">
+                Services <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+              </div>
+
+              <ul class="dropdown__menu">
+                <!-- <li>
+                           <a href="#" class="dropdown__link">
+                              <i class="ri-pie-chart-line dropdown-services-link"></i>Canada Services 
+                           </a>                          
+                        </li>
+
+                        <li>
+                           <a href="#" class="dropdown__link">
+                              <i class="ri-arrow-up-down-line"></i>USA Services
+                           </a>
+                        </li> -->
+
+                <li class="dropdown__subitem">
+                  <div class="dropdown__link">
+                    <i class="ri-bar-chart-line"></i>Services In USA
+                    <i class="ri-add-line dropdown__add"></i>
+                  </div>
+
+                  <ul class="dropdown__submenu">
+                    <li>
+                      <a href="services.html" class="dropdown__sublink">
+                        <i class="ri-file-list-line"></i> Tax Preparation
+                        Services - USA
+                      </a>
+                    </li>
+
+                    <li>
+                      <a href="servicesusa.html" class="dropdown__sublink">
+                        <i class="ri-cash-line"></i> Accounts Payable Services -
+                        USA
+                      </a>
+                    </li>
+
+                    <li>
+                      <a href="servicesusatwo.html" class="dropdown__sublink">
+                        <i class="ri-refund-2-line"></i> Year End Accounts
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="dropdown__subitem">
+                  <div class="dropdown__link">
+                    <i class="ri-bar-chart-line"></i>Services In Canada<i
+                      class="ri-add-line dropdown__add"
+                    ></i>
+                  </div>
+
+                  <ul class="dropdown__submenu">
+                    <li>
+                      <a href="canada2.html" class="dropdown__sublink">
+                        <i class="ri-file-list-line"></i>Tax Preparation
+                        Services - CANADA
+                      </a>
+                    </li>
+
+                    <li>
+                      <a href="canada3.html" class="dropdown__sublink">
+                        <i class="ri-cash-line"></i>  Accounts Payable Services -
+                        CANADA
+                      </a>
+                    </li>
+
+                    <li>
+                      <a href="canada4.html" class="dropdown__sublink">
+                        <i class="ri-refund-2-line"></i> Year End Accounts - CANADA
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+
+            <li><a href="contact.html" class="nav__link">Contact</a></li>
+            <a href="contact.html" class="nav__link">Get Started</a>
+          </ul>
+          
+        </div>
+        
+      </nav>
+      
+    </header>
+
+
+    <!-- Pricing Section -->
+<section class="pricing-section">
+  <div class="pricing-header">
+    <h2>Our Pricing Plans</h2>
+    <p>Choose a plan that works best for your team and business.</p>
+  </div>
+
+  <div class="pricing-container">
+    <div class="plan free">
+      <h3>Free</h3>
+      <p class="price">$0</p>
+      <p class="billing">Per user/month, billed annually</p>
+      <ul>
+        <li>Free e-mail alerts</li>
+        <li>3-minute checks</li>
+        <li>Automatic data enrichment</li>
+        <li>10 monitors</li>
+        <li>Up to 3 seats</li>
+      </ul>
+      <button>Get started for free</button>
+    </div>
+
+    <div class="plan pro">
+      <div class="badge">🔥 Popular</div>
+      <h3>Pro</h3>
+      <p class="price">$85</p>
+      <p class="billing">Per user/month, billed annually</p>
+      <ul>
+        <li>Unlimited phone calls</li>
+        <li>30-second checks</li>
+        <li>Single-user account</li>
+        <li>20 monitors</li>
+        <li>Up to 6 seats</li>
+      </ul>
+      <button>Get started with Pro</button>
+    </div>
+
+    <div class="plan enterprise">
+      <h3>Enterprise</h3>
+      <p class="price custom">Custom</p>
+      <p class="billing">Per user/month, billed annually</p>
+      <ul>
+        <li>Everything in Pro</li>
+        <li>Up to 5 team members</li>
+        <li>100 monitors</li>
+        <li>15 status pages</li>
+        <li>200+ integrations</li>
+      </ul>
+      <button>Get started with Enterprise</button>
+    </div>
+  </div>
+</section>
+
+
+   <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <div class="nav-logo">
+                <img style="height: 150px; width: 220px;" src="./image/websitelogo.png" alt="">
+            </div>
+            
+                    </div>
+                    <p class="footer-description">Your trusted partner for comprehensive financial solutions. We help individuals and businesses achieve their financial goals.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-title">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-title">Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="services.html">Personal Loans</a></li>
+                        <li><a href="services.html">Investment Planning</a></li>
+                        <li><a href="services.html">Insurance</a></li>
+                        <li><a href="services.html">Business Finance</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-title">Contact Info</h4>
+                    <div class="contact-info">
+                        <p>📧 info@nextledgers.com</p>
+                        <p>📞 +91 82852 85223</p>
+                        <p>📍 Ansari Road Daryaganj , New Delhi (110002)</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Advance Financial Services. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+    
+     <script src="navbar.js"></script>
+</body>
+</html>

@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Advance Financial Services</title>
+    <meta name="description" content="Get in touch with Advance Financial Services. Contact us for financial consultation, loan applications, or any questions about our services.">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+       <!--=============== REMIXICONS ===============-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/styles.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+</head>
+<body>
+    <!-- Navigation -->
+ <header class="header">
+      <nav class="nav container">
+        <div class="nav__data">
+          <a href="index.html" class="nav__logo">
+            <i class="ri-planet-line"></i>
+            <img
+              style="height: 140px; width: 180px"
+              src="./image/websitelogo.png"
+              alt=""
+            />
+          </a>
+
+          <div class="nav__toggle" id="nav-toggle">
+            <i class="ri-menu-line nav__burger"></i>
+            <i class="ri-close-line nav__close"></i>
+          </div>
+        </div>
+
+        <!--=============== NAV MENU ===============-->
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            
+          <li><a class="nav__link"  href="index.html" >Home</a></li>
+            <li><a class="nav__link"a  href="about.html">About</a></li>
+
+
+            <!--=============== DROPDOWN 1 ===============-->
+            <li class="dropdown__item">
+              <div class="nav__link">
+                Services <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+              </div>
+
+              <ul class="dropdown__menu">
+                <!-- <li>
+                           <a href="#" class="dropdown__link">
+                              <i class="ri-pie-chart-line dropdown-services-link"></i>Canada Services 
+                           </a>                          
+                        </li>
+
+                        <li>
+                           <a href="#" class="dropdown__link">
+                              <i class="ri-arrow-up-down-line"></i>USA Services
+                           </a>
+                        </li> -->
+
+                <li class="dropdown__subitem">
+                  <div class="dropdown__link">
+                    <i class="ri-bar-chart-line"></i>Services In USA
+                    <i class="ri-add-line dropdown__add"></i>
+                  </div>
+
+                  <ul class="dropdown__submenu">
+                    <li>
+                      <a href="services.html" class="dropdown__sublink">
+                        <i class="ri-file-list-line"></i> Tax Preparation
+                        Services - USA
+                      </a>
+                    </li>
+
+                    <li>
+                      <a href="servicesusa.html" class="dropdown__sublink">
+                        <i class="ri-cash-line"></i> Accounts Payable Services -
+                        USA
+                      </a>
+                    </li>
+
+                    <li>
+                      <a href="servicesusatwo.html" class="dropdown__sublink">
+                        <i class="ri-refund-2-line"></i> Year End Accounts
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="dropdown__subitem">
+                  <div class="dropdown__link">
+                    <i class="ri-bar-chart-line"></i>Services In Canada<i
+                      class="ri-add-line dropdown__add"
+                    ></i>
+                  </div>
+
+                  <ul class="dropdown__submenu">
+                    <li>
+                      <a href="canada2.html" class="dropdown__sublink">
+                        <i class="ri-file-list-line"></i>Tax Preparation
+                        Services - CANADA
+                      </a>
+                    </li>
+
+                    <li>
+                      <a href="canada3.html" class="dropdown__sublink">
+                        <i class="ri-cash-line"></i>  Accounts Payable Services -
+                        CANADA
+                      </a>
+                    </li>
+
+                    <li>
+                      <a href="canada4.html" class="dropdown__sublink">
+                        <i class="ri-refund-2-line"></i> Year End Accounts - CANADA
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+
+            <li><a href="contact.html" class="nav__link">Contact</a></li>
+            <a href="contact.html" class="nav__link">Get Started</a>
+          </ul>
+          
+        </div>
+        
+      </nav>
+      
+    </header>
+
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <div class="page-header-content">
+                <h1 class="page-title">Contact Us</h1>
+                <p class="page-subtitle">Ready to take the next step? Get in touch with our expert team for personalized financial solutions.</p>
+            </div>
+        </div>
+    </section>
+
+  <section class="contact-section-one">
+    <div class="container">
+        <div class="contact-content-wrapper">
+            <!-- Contact Form -->
+            <div class="form-column">
+                <h2 class="section-title">Get in Touch</h2>
+                <p class="section-subtitle">We're here to help you with any financial inquiries or requests.</p>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <label for="fullName">Full Name *</label>
+                        <input type="text" id="fullName" name="fullName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+                    <div class="form-group">
+                        <label for="service">Interested Service</label>
+                        <select id="service" name="service">
+                            <option value="">Select a service</option>
+                            <option value="loans">Loans</option>
+                            <option value="investments">Investments</option>
+                            <option value="insurance">Insurance</option>
+                            <option value="consulting">Consulting</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Your Message *</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary">Send Message</button>
+                </form>
+            </div>
+
+            <!-- Contact Info -->
+            <div class="info-column">
+                <div class="info-box">
+                    <h3>📞 Call Us</h3>
+                    <p>+1 82852 85223</p>
+                    <span>Mon - Fri: 9AM to 6PM</span>
+                </div>
+                <div class="info-box">
+                    <h3>📧 Email</h3>
+                    <p>info@nextledgers.com</p>
+                    <p>support@nextledgers.com</p>
+                </div>
+                <div class="info-box">
+                    <h3>📍 Visit Office</h3>
+                    <p>Ansari Road, Daryaganj, New Delhi - 110002</p>
+                    <a href="https://maps.google.com" target="_blank" class="map-link">📍 Get Directions</a>
+                </div>
+                <div class="info-box cta-box">
+                    <h3>⚡ Need Quick Help?</h3>
+                    <p>Call us now for urgent financial support!</p>
+                    <a href="tel:+91 8285285223" class="btn-secondary">Call Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <div class="nav-logo">
+                <img style="height: 150px; width: 220px;" src="./image/websitelogo.png" alt="">
+            </div>
+            
+                    </div>
+                    <p class="footer-description">Your trusted partner for comprehensive financial solutions. We help individuals and businesses achieve their financial goals.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-title">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-title">Services</h4>
+                    <ul class="footer-links"> 
+                        <li><a href="services.html">Investment Planning</a></li>
+                        <li><a href="services.html">Insurance</a></li>
+                        <li><a href="services.html">Business Finance</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-title">Contact Info</h4>
+                    <div class="contact-info">
+                        <p>📧 info@nextledgers.com</p>
+                        <p>📞 +91 82852 85223</p>
+                        <p>📍 Ansari Road Daryaganj , New Delhi (110002)</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Advance Financial Services. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    
+     
+    <script src="./navbar.js"></script>
+    
+    
+    <script src="assets/js/main.js"></script>
+
+</body>
+</html>
