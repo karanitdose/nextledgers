@@ -1,0 +1,58 @@
+ 
+
+.why-next-ledgers {
+  background-color: #fff5ec; /* light orange background */
+  padding: 60px 20px;
+}
+
+.containerdata{ 
+  margin: auto;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.image-box {
+  flex: 1 1 45%;
+  text-align: center;
+}
+
+.image-box img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+.text-box {
+  flex: 1 1 50%;
+  background-color: white;
+  padding: 30px;
+  border-left: 6px solid #FF6B00; /* orange border accent */
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(255, 107, 0, 0.15);
+}
+
+.text-box h1 {
+  color: #FF6B00;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.text-box p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .text-box {
+    border-left: none;
+    border-top: 6px solid #FF6B00;
+  }
+}

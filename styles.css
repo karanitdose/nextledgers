@@ -461,7 +461,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .hero-title {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     font-weight: bold;
     margin-bottom: 1.5rem;
     color: #1f2937;
@@ -469,7 +469,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .hero-subtitle {
-    font-size: 1.25rem;
+    font-size: 1rem;
     color: #6b7280;
     margin-bottom: 2.5rem;
     line-height: 1.6;
@@ -810,13 +810,13 @@ h1, h2, h3, h4, h5, h6 {
 
 .values-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 2rem;
 }
 
 .value-card {
     background: white;
-    padding: 2.5rem;
+    padding: 1.5rem;
     border-radius: 16px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
     text-align: center;
@@ -1805,7 +1805,7 @@ button:hover {
 /* video section starts here */
 .hero-section {
   position: relative;
-  height: 80vh;
+  height: 65vh;
   width: 100%;
   overflow: hidden;
   display: flex;
@@ -1868,7 +1868,7 @@ button:hover {
 
  .carousel-container {
     overflow: hidden;
-    padding: 40px 20px;
+    padding: 20px 20px;
     background-color: white;
   }
 
