@@ -212,6 +212,10 @@ h1, h2, h3, h4, h5, h6 {
     transform: scale(1.05);
 }
 
+.menulinkanchor{
+  color:  white;
+  text-decoration: none;
+}
 .nav-menu {
     display: flex;
     align-items: center;
@@ -495,7 +499,7 @@ h1, h2, h3, h4, h5, h6 {
 /* Page Header */
 .page-header {
     margin-top: 70px;
-    padding: 60px 0;
+    padding: 20px 0;
     background: linear-gradient(135deg, #fef3e2 0%, #ffffff 100%);
     text-align: center;
 }
@@ -507,7 +511,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Services Overview */
 .services-overview {
-    padding: 80px 0;
+    padding: 20px 0;
     background: #ffffff;
 }
 
@@ -629,7 +633,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Why Choose Us */
 .why-choose-us {
-    padding: 80px 0;
+    padding: 10px 0;
     background: #f9fafb;
 }
 
@@ -644,7 +648,8 @@ h1, h2, h3, h4, h5, h6 {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
-    margin-top: 2rem;
+    /* margin-top: 2rem; */
+    margin: 20px 0;
 }
 
 .feature-item {
@@ -730,18 +735,20 @@ h1, h2, h3, h4, h5, h6 {
 
 /* About Content */
 .about-content {
-    padding: 80px 0;
+    /* padding: 80px 0; */
+    margin-top: 10px;
 }
 
 .about-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 4rem;
+    
     align-items: center;
 }
 
 .about-paragraph {
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
     color: #6b7280;
     line-height: 1.7;
     font-size: 1.05rem;
@@ -756,7 +763,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Mission & Vision */
 .mission-vision {
-    padding: 80px 0;
+    padding: 10px 0;
     background: #f9fafb;
 }
 
@@ -768,7 +775,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .mv-card {
     background: white;
-    padding: 3rem;
+    padding: 1rem;
     border-radius: 16px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
     text-align: center;
@@ -792,7 +799,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .mv-title {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     margin-bottom: 1.5rem;
     color: #1f2937;
 }
@@ -800,12 +807,12 @@ h1, h2, h3, h4, h5, h6 {
 .mv-description {
     color: #6b7280;
     line-height: 1.7;
-    font-size: 1.05rem;
+    font-size: 1rem;
 }
 
 /* Values Section */
 .values-section {
-    padding: 80px 0;
+    padding: 20px 0;
 }
 
 .values-grid {
@@ -1115,7 +1122,7 @@ h1, h2, h3, h4, h5, h6 {
 
  /* Contact Section Redesign */
 .contact-section-one {
-    padding: 80px 20px;
+    padding: 20px 20px;
     background-color: #f9fafb;
 }
 
@@ -1344,19 +1351,19 @@ h1, h2, h3, h4, h5, h6 {
 
 /* CTA Section */
 .cta-section {
-    padding: 80px 0;
+    padding: 20px 0;
     background: linear-gradient(135deg, #1f2937 0%, #374151 100%);
     text-align: center;
 }
 
 .cta-title {
-    font-size: 2.5rem;
+    font-size: 2rem;
     color: white;
     margin-bottom: 1rem;
 }
 
 .cta-subtitle {
-    font-size: 1rem;
+    font-size: 0.9rem;
     color: rgba(255, 255, 255, 0.8);
     margin-bottom: 1.5rem;
     max-width: 600px;
@@ -1371,105 +1378,114 @@ h1, h2, h3, h4, h5, h6 {
     flex-wrap: wrap;
 }
 /* Footer Styling */
+
  
-.footer-container::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  /* background: linear-gradient(to bottom, rgba(236, 150, 52, 0.8), rgba(210, 107, 4, 0.1)); */
-  background: url('https://img.freepik.com/free-photo/top-view-business-office-desk-background-finance-report-calculator-laptop-pen-business-planning-concept_1921-1961.jpg') no-repeat center center/cover;
-  
-  z-index: 1;
-}
+    /* Footer Styles */
+    .footer-container {
+      background-color: #6B6C6C;
+      color: #ffffff;
+      padding: 40px 20px;
+    }
 
-.footer-overlay {
-  position: relative;
-  z-index: 2;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  padding: 40px;
-  border-radius: 8px;
-}
+    .footer-overlay {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
 
+    /* Footer Left Section */
+    .footer-left {
+      flex: 1 1 250px;
+      margin-bottom: 20px;
+    }
 
-.footer-left {
-  flex: 1 1 250px;
-}
+    .footer-logo {
+      width: 160px;
+      margin-bottom: 20px;
+      filter: brightness(0) invert(1);
+    }
 
-.footer-logo {
-  width: 160px;
-}
+    .footer-contact {
+      list-style: none;
+      font-size: 16px;
+      line-height: 2;
+    }
 
-.footer-contact {
-  list-style: none;
-  font-size: 16px;
-  line-height: 1.8;
-}
+    .footer-contact li {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
 
-.footer-contact li span {
-  margin-right: 8px;
-}
+    .footer-contact span {
+      font-size: 18px;
+      line-height: 1;
+    }
 
-.footer-section {
-  flex: 1 1 200px;
-  margin-bottom: 20px;
-}
+    .footer-contact a {
+      color: #ffffff;
+      text-decoration: none;
+    }
 
-.footer-section h3 {
-  font-size: 18px;
-  margin-bottom: 15px;
-  font-weight: bold;
-}
+    .footer-contact a:hover {
+      text-decoration: underline;
+    }
 
-.footer-links {
-  list-style: none;
-  font-size: 16px;
-  line-height: 1.8;
-}
+    /* Footer Sections */
+    .footer-section {
+      flex: 1 1 200px;
+      margin-bottom: 20px;
+    }
 
-.footer-links li::before {
-  content: '›';
-  margin-right: 8px;
-  color: #EA7C24;
-}
-/* Make anchor tags inherit list styles */
-.footer-links li a {
-  color: #EA7C24;
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
+    .footer-section h3 {
+      font-size: 18px;
+      margin-bottom: 15px;
+      font-weight: bold;
+      color: #EA7C24;
+    }
 
-.footer-links li a:hover {
-  color: #EA7C24;
-}
+    .footer-links {
+      list-style: none;
+      font-size: 16px;
+      line-height: 2;
+    }
 
-.footer-contact a {
-  color: #EA7C24;
-  text-decoration: none;
-}
+    .footer-links li::before {
+      content: '›';
+      margin-right: 8px;
+      color: #ffffff;
+    }
 
-.footer-contact a:hover {
-  text-decoration: underline;
-}
+    .footer-links li a {
+      color: #ffffff;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
 
-/* Responsive Design */
-@media (max-width: 992px) {
-  .footer-overlay {
-    flex-direction: column;
-    padding: 20px;
-  }
+    .footer-links li a:hover {
+      color: #EA7C24;
+    }
 
-  .footer-left,
-  .footer-section {
-    flex: 1 1 100%;
-    margin-bottom: 30px;
-  }
+    /* Responsive */
+    @media (max-width: 992px) {
+      .footer-overlay {
+        flex-direction: column;
+        padding: 20px;
+      }
 
-  .footer-logo {
-    width: 140px;
-  }
-}
+      .footer-left,
+      .footer-section {
+        flex: 1 1 100%;
+        margin-bottom: 30px;
+      }
+
+      .footer-logo {
+        width: 140px;
+      }
+    }
 
 /* Submenu styling */
 .submenu a {
@@ -2098,7 +2114,7 @@ button:hover {
 
 .contact-section {
   background: linear-gradient(to bottom, #f5f5f5 0%, #fff 100%);
-  padding: 60px 20px;
+  padding: 20px 20px;
 }
 
 .contact-container {
@@ -2110,7 +2126,7 @@ button:hover {
   background-color: #ffffff;
   border: 1px solid #ddd;
   border-radius: 10px;
-  padding: 40px 30px;
+  padding: 20px 30px;
   text-align: center;
   box-shadow: 0 4px 10px rgba(0,0,0,0.05);
 }
@@ -2191,20 +2207,20 @@ button:hover {
 /* testimonial style start here  */
 .testimonial-section {
   text-align: center;
-  padding: 40px 20px;
+  padding: 20px 20px;
 }
 
 .testimonial-heading {
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: #ea580c;
   margin-bottom: 10px;
   margin-top: 20px;
 }
 
 .testimonial-subtext {
-  font-size: 1rem;
+  font-size: 0.7;
   color: #666;
-  margin-bottom: 40px;
+  /* margin-bottom: 40px; */
 }
 
 .testimonial-para {
@@ -2230,14 +2246,14 @@ button:hover {
   display: flex;
   justify-content: space-around;
   gap: 20px;
-  padding: 20px;
+  padding: 10px;
 }
 
 .testimonial {
   background: #fff;
   border-radius: 15px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  padding: 20px;
+  padding: 5px;
   width: 30%;
   transition: transform 0.3s ease;
   position: relative;
@@ -2250,7 +2266,7 @@ button:hover {
 }
 
 .testimonial p {
-  font-size: 0.95rem;
+  font-size: 0.5rem;
   line-height: 1.5;
   color: #333;
 }
