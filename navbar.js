@@ -48,8 +48,7 @@ document.addEventListener("DOMContentLoaded", function () {
     setInterval(moveCarousel, 2500); 
 
     // testimonial js 
-
-      let currentSlide = 0;
+let currentSlide = 0;
   const carousel = document.getElementById('carousel');
   const totalSlides = document.querySelectorAll('.testimonial-card').length;
 
@@ -66,9 +65,6 @@ document.addEventListener("DOMContentLoaded", function () {
     currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
     updateCarousel();
   }
-
-  // Optional auto-slide
-  setInterval(nextSlide, 5000);
 
 
   // top navbar screen
