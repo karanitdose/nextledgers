@@ -40,11 +40,11 @@
   margin-bottom: 20px;
 }
 
-.text-box p {
+/* .text-box p {
   font-size: 0.8rem;
   line-height: 1.6;
   margin-bottom: 16px;
-}
+} */
 
 @media (max-width: 768px) {
   .container {
